@@ -122,7 +122,7 @@
         </p>
       </div>
       <div class="mt-5">
-        <p class="flex justify-center font-semibold">
+        <p class="flex justify-center font-semibold text-xs md:text-sm">
           Keep up to date with my latest projects and adventures!
         </p>
         <div class="flex justify-center mt-2">

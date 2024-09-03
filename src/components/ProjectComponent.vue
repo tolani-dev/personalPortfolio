@@ -20,7 +20,7 @@
         <div class="text">
           <p class="title">CONTECH</p>
           <h4 class="description">
-            A website for sponsors and .... to register for a tech conference
+            A website for sponsors and .... to register for a tech conference.
           </h4>
           <button @click="conTech" class="btn">View</button>
         </div> </swiper-slide
@@ -47,7 +47,7 @@
           <p class="title">NAS AUTO(2022)</p>
           <h4 class="description">
             An automobile/car dealership website built during my bootcam
-            training without been responsive
+            training without been responsive.
           </h4>
           <button @click="nasTechOld" class="btn">View</button>
         </div></swiper-slide
@@ -58,7 +58,7 @@
           <p class="title">FIRST PORTFOLIO(bootcamp project 2022)</p>
           <h4 class="description">
             First portfolio project during my bootcamp training as a frontend
-            developer without been responsive
+            developer without been responsive.
           </h4>
           <button @click="firstPort" class="btn">View</button>
         </div></swiper-slide
@@ -69,7 +69,7 @@
           <p class="title">MED24(2022)</p>
           <h4 class="description">
             A telemedicine app done during my bootcam traning using
-            JavaScript(frontend) and python(backend).
+            JavaScript(frontend) and python(backend) without been responsive.
           </h4>
           <button class="btn">In View</button>
         </div></swiper-slide
