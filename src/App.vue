@@ -40,7 +40,7 @@
   <div class="w-[30vh] m-auto">
     <div class="flex justify-between">
       <!-- <svg
-        class="w-5 h-5"
+        class="w-5 h-5 hover:cursor-pointer"
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
@@ -75,7 +75,7 @@
       <svg
         @click="linkedIn"
         fill="currentColor"
-        class="w-5 h-5"
+        class="w-5 h-5 hover:cursor-pointer"
         viewBox="0 0 20 20"
         role="img"
       >
@@ -90,7 +90,7 @@
       <svg
         @click="twitter"
         fill="currentColor"
-        class="w-5 h-5"
+        class="w-5 h-5 hover:cursor-pointer"
         viewBox="0 0 24 24"
         role="img"
       >
@@ -103,7 +103,7 @@
         @click="instagram"
         fill="currentColor"
         role="img"
-        class="w-5 h-5"
+        class="w-5 h-5 hover:cursor-pointer"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -115,7 +115,7 @@
       <svg
         @click="instagram"
         fill="currentColor"
-        class="w-5 h-5"
+        class="w-5 h-5 hover:cursor-pointer"
         viewBox="0 0 24 24"
         role="img"
       >

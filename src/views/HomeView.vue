@@ -146,7 +146,7 @@
           v-for="tab in tabs"
           :key="tab"
           @click="isActive(tab)"
-          class="font-bold text-[#868e96]"
+          class="font-bold text-[#868e96] hover:cursor-pointer"
           :class="
             active == tab ? 'border-b-4 border-primary text-secondary' : ''
           "

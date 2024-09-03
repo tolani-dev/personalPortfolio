@@ -18,7 +18,10 @@
         <p class="font-medium text-secondary text-wrap">
           Hi Giwa you are doing great. Plz continue with your journey
         </p>
-        <div @click="commentNavin" class="flex justify-end gap-2 p-2">
+        <div
+          @click="commentNavin"
+          class="flex justify-end gap-2 p-2 hover:cursor-pointer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -55,7 +58,7 @@
         <p class="font-medium text-secondary text-wrap">
           just a fan of your videos 👍🏼
         </p>
-        <div class="flex justify-end gap-2 p-2">
+        <div class="flex justify-end gap-2 p-2 hover:cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -92,7 +95,10 @@
         <p class="font-medium text-secondary text-wrap">
           Well explained... thank you Tola
         </p>
-        <div @click="commentTolu" class="flex justify-end gap-2 p-2">
+        <div
+          @click="commentTolu"
+          class="flex justify-end gap-2 p-2 hover:cursor-pointer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -130,7 +136,10 @@
         <p class="font-medium text-secondary text-wrap">
           Helpful stuff. Thanks.
         </p>
-        <div @click="commentNeku" class="flex justify-end gap-2 p-2">
+        <div
+          @click="commentNeku"
+          class="flex justify-end gap-2 p-2 hover:cursor-pointer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
