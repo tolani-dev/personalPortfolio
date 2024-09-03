@@ -59,7 +59,7 @@
           I’m thrilled to have you here! Explore my portfolio and dive into the
           world of all things tech with #jsWithTola. From coding adventures to
           creative projects, this is where passion meets innovation. Let’s
-          connect and create something amazing together!"
+          connect and create something amazing together!
         </p>
         <div class="mt-3 h-[50vh]">
           <img

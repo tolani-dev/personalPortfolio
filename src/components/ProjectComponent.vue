@@ -18,7 +18,7 @@
       <swiper-slide
         ><img src="@/assets/icons/grid3.png" class="h-[60vh] w-full" />
         <div class="text">
-          <p class="title">cCONTECH</p>
+          <p class="title">CONTECH</p>
           <h4 class="description">
             A website for sponsors and .... to register for a tech conference
           </h4>
@@ -34,7 +34,7 @@
       ><swiper-slide>
         <img src="@/assets/icons/period.png" class="h-[60vh] w-full" />
         <div class="text">
-          <p class="title">LADY</p>
+          <p class="title">PERIOD TRACKER</p>
           <h4 class="description">
             A health app that track menstrual cycle and ovulation.
           </h4>
@@ -45,7 +45,10 @@
         <img src="@/assets/icons/firstCar.png" class="h-[60vh] w-full" />
         <div class="text">
           <p class="title">NAS AUTO(2022)</p>
-          <h4 class="description">An automobile/car dealership website</h4>
+          <h4 class="description">
+            An automobile/car dealership website built during my bootcam
+            training without been responsive
+          </h4>
           <button @click="nasTechOld" class="btn">View</button>
         </div></swiper-slide
       >
@@ -55,7 +58,7 @@
           <p class="title">FIRST PORTFOLIO(bootcamp project 2022)</p>
           <h4 class="description">
             First portfolio project during my bootcamp training as a frontend
-            developer.
+            developer without been responsive
           </h4>
           <button @click="firstPort" class="btn">View</button>
         </div></swiper-slide
