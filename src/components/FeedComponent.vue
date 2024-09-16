@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto hover:bg-black-light hover:rounded-md mb-12 pt-4"
+    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto hover:bg-[#F0F3F5] dark:hover:bg-black-light hover:rounded-md mb-12 pt-4"
   >
     <div
       class="mb-1 w-[20%] sm:w-[20%] md:w-[13vw] lg:w-[11vw] flex justify-around items-center pt-3"
@@ -48,14 +48,14 @@
           • <span class="text-[#868e96]">27 Aug 2024</span>
         </h3>
         <p
-          class="bg-black-light font-bold rounded-2xl py-1 px-2 w-fit text-nowrap"
+          class="bg-[#DEE2E6] dark:bg-[#485056] font-bold rounded-2xl py-1 px-2 w-fit text-nowrap"
         >
           👩🏽‍💻 Me
         </p>
         <h4 class="font-black text-xl lg:text-2xl tracking-tighter">
           Hello World!
         </h4>
-        <p class="font-medium text-secondary text-wrap">
+        <p class="dark:text-secondary font-medium text-wrap">
           I’m thrilled to have you here! Explore my portfolio and dive into the
           world of all things tech with #jsWithTola. From coding adventures to
           creative projects, this is where passion meets innovation. Let’s
@@ -63,9 +63,9 @@
         </p>
         <div class="mt-3 h-[50vh]">
           <img
-            src="@/assets/icons/person.jpg"
+            src="@/assets/icons/tola.jpeg"
             alt="image"
-            class="h-full w-full object-fill rounded-lg"
+            class="h-full w-full object-fill object-to rounded-lg"
           />
         </div>
         <div class="flex justify-end gap-2 p-2">
@@ -102,7 +102,7 @@
   </div>
   <!--  -->
   <div
-    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto hover:bg-black-light hover:rounded-md mb-12 pt-4"
+    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto hover:bg-[#F0F3F5] dark:hover:bg-black-light hover:rounded-md mb-12 pt-4"
   >
     <!-- <div
       class="mb-1 w-[30vw] sm:w-[20%] md:w-[13vw] lg:w-[11vw] flex justify-around items-center"
@@ -150,14 +150,14 @@
           • <span class="text-[#868e96]">20 Jan 2023</span>
         </h3>
         <p
-          class="bg-black-light font-bold rounded-2xl py-1 px-2 w-fit text-nowrap"
+          class="bg-[#DEE2E6] dark:bg-[#485056] font-bold rounded-2xl py-1 px-2 w-fit text-nowrap"
         >
           🎥 youTube
         </p>
         <!-- <h4 class="font-black text-xl lg:text-2xl tracking-tighter">
           Hello World!
         </h4> -->
-        <p class="font-medium text-secondary text-wrap">
+        <p class="dark:text-secondary font-medium text-wrap">
           Created a series of JavaScript tutorials focused on mastering array
           methods. Dive in to enhance your coding skills and unlock new
           possibilities! Click the link to watch more vidoes.
@@ -206,7 +206,7 @@
     </div>
   </div>
   <div
-    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto hover:bg-black-light hover:rounded-md mb-12 pt-4"
+    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto hover:bg-[#F0F3F5] dark:hover:bg-black-light hover:rounded-md mb-12 pt-4"
   >
     <!-- <div
       class="mb-1 w-[30vw] sm:w-[20%] md:w-[13vw] lg:w-[11vw] flex justify-around items-center"
@@ -254,14 +254,14 @@
           • <span class="text-[#868e96]">20 Jan 2023</span>
         </h3>
         <p
-          class="bg-black-light font-bold rounded-2xl py-1 px-2 w-fit text-nowrap"
+          class="bg-[#DEE2E6] dark:bg-[#485056] font-bold rounded-2xl py-1 px-2 w-fit text-nowrap"
         >
           🌷 Period tracker
         </p>
         <!-- <h4 class="font-black text-xl lg:text-2xl tracking-tighter">
           Mobile App
         </h4> -->
-        <p class="font-medium text-secondary text-wrap">
+        <p class="dark:text-secondary font-medium text-wrap">
           Currently developing a period tracker mobile app using the JavaScript
           Ionic framework! Excited to bring this project to life. #WomenInTech
           #JavaScript #IonicFramework.
@@ -304,7 +304,7 @@
     </div>
   </div>
   <div
-    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto hover:bg-black-light hover:rounded-md mb-12 pt-4"
+    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto hover:bg-[#F0F3F5] dark:hover:bg-black-light hover:rounded-md pt-4"
   >
     <!-- <div
       class="mb-1 w-[30vw] sm:w-[20%] md:w-[13vw] lg:w-[11vw] flex justify-around items-center"
@@ -352,14 +352,14 @@
           • <span class="text-[#868e96]">27 Aug 2024</span>
         </h3>
         <p
-          class="bg-black-light font-bold rounded-2xl py-1 px-2 w-fit text-nowrap"
+          class="bg-[#DEE2E6] dark:bg-[#485056] font-bold rounded-2xl py-1 px-2 w-fit text-nowrap"
         >
           🎂 Birthday
         </p>
         <!-- <h4 class="font-black text-xl lg:text-2xl tracking-tighter">
           Mobile App
         </h4> -->
-        <p class="font-medium text-secondary text-wrap">
+        <p class="dark:text-secondary font-medium text-wrap">
           Another year older, wiser, and more grateful! 🎉 Cheers to new
           adventures, growth, and endless possibilities. Happy birthday to me!
           🥳 #BirthdayVibes #GratefulHeart.

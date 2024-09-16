@@ -1,5 +1,5 @@
 <template class="">
-  <div class="pt-[80px]">
+  <div class="pt-[80px] dark:bg-bgcolor dark:text-white">
     <div
       class="bg-secondary h-[20vh] md:h-[25vh] lg:h-[30vh] w-full sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[50vw] m-auto"
     >
@@ -9,14 +9,14 @@
       <img
         src="@/assets/icons/profile2.png"
         alt="h"
-        class="rounded-full w-36 h-36 border-4 mt-[-10vh] z-50"
+        class="rounded-full w-36 h-36 border-4 mt-[-10vh]"
       />
       <div
         @click="twitter"
         class="bg-primary w-fit h-fit rounded-3xl px-4 py-2 bg-success mt-5 flex justify-around items-center gap-1 hover:outline hover:cursor-pointer"
       >
-        <button class="font-bold">Follow</button>
-        <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24" role="img">
+        <button class="font-bold text-white">Follow</button>
+        <svg fill="white" class="w-5 h-5" viewBox="0 0 24 24" role="img">
           <title>Twitter icon</title>
           <path
             d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
@@ -128,12 +128,12 @@
         <div class="flex justify-center mt-2">
           <input
             placeholder="Email Address"
-            class="block bg-[#011] w-[60%] font-medium border-none rounded-l-3xl focus:outline-none focus:outline-primary p-2"
+            class="block dark:bg-[#011] bg-[#eee] w-[60%] font-medium border-none rounded-l-3xl focus:outline-none focus:outline-primary p-2"
           />
           <button
             class="bg-primary border-none rounded-r-3xl y-2 px-3.5 hover:outline"
           >
-            <span class="font-bold">Subscribe!</span>
+            <span class="font-bold text-white">Subscribe!</span>
           </button>
         </div>
         <span
@@ -146,9 +146,11 @@
           v-for="tab in tabs"
           :key="tab"
           @click="isActive(tab)"
-          class="font-bold text-[#868e96] hover:cursor-pointer"
+          class="font-bold dark:text-[#868e96] text-[#565a5f] hover:cursor-pointer"
           :class="
-            active == tab ? 'border-b-4 border-primary text-secondary' : ''
+            active == tab
+              ? 'border-b-4 border-primary dark:text-secondary text-[#211]'
+              : ''
           "
         >
           {{ tab }}
@@ -175,7 +177,7 @@ import AboutComponent from "@/components/AboutComponent.vue";
 import FeedComponent from "@/components/FeedComponent.vue";
 import ProjectComponent from "@/components/ProjectComponent.vue";
 import ReviewComponent from "@/components/ReviewComponent.vue";
-import { defineComponent, ref } from "vue";
+import { defineComponent, onMounted, ref } from "vue";
 // import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 
 export default defineComponent({
@@ -201,12 +203,37 @@ export default defineComponent({
     const twitter = () => {
       window.open("https://x.com/giwafauzziyyah", "_blank");
     };
+    const isDarkMode = ref(false);
+
+    // Function to toggle dark mode
+    // const toggleDarkMode = () => {
+    //   isDarkMode.value = !isDarkMode.value;
+    //   if (isDarkMode.value) {
+    //     document.documentElement.classList.add("dark");
+    //     localStorage.setItem("theme", "dark");
+    //   } else {
+    //     document.documentElement.classList.remove("dark");
+    //     localStorage.setItem("theme", "light");
+    //   }
+    // };
+    // Check the user's theme preference on mounted
+    onMounted(() => {
+      const storedTheme = localStorage.getItem("theme");
+      const userPrefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      if (storedTheme === "dark" || (!storedTheme && userPrefersDark)) {
+        isDarkMode.value = true;
+        document.documentElement.classList.add("dark");
+      }
+    });
     return {
       tabs,
       isActive,
       active,
       openYoutube,
       twitter,
+      // toggleDarkMode,
     };
   },
 });

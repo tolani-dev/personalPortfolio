@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       fontWeight: {
@@ -44,9 +45,9 @@ module.exports = {
           tint: "#600047",
           light: "#f1f1f1be",
         },
-        green: {
+        bgcolor: {
           shades: "#1F8946",
-          DEFAULT: "#5ef85eba", //
+          DEFAULT: "#17191d", //
           tint: "#c0dec0c9",
           light: "#c0dec00f",
         },
@@ -65,6 +66,7 @@ module.exports = {
           DEFAULT: "#000000", //
           tint: "#ebecf2",
           light: "#28282B",
+          lighter: "#17191D",
         },
       },
       fontFamily: {

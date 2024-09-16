@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto hover:bg-black-light hover:rounded-md mb-12 pt-4"
+    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto hover:bg-[#F0F3F5] dark:hover:bg-black-light hover:rounded-md mb-12 pt-4"
   >
     <div class="flex justify-around gap-3 sm:gap-0 px-1 pt-3">
       <div class="w-[10vw] md:w-[5vw]">
@@ -15,7 +15,7 @@
           <p class="text-[#868e96]">YouTube</p>
           @navin_kg ✨ • <span class="text-[#868e96]">03 Aug 2024</span>
         </h3>
-        <p class="font-medium text-secondary text-wrap">
+        <p class="font-medium dark:text-secondary text-wrap">
           Hi Giwa you are doing great. Plz continue with your journey
         </p>
         <div
@@ -40,7 +40,7 @@
     </div>
   </div>
   <div
-    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto hover:bg-black-light hover:rounded-md mb-12 pt-4"
+    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto hover:bg-[#F0F3F5] dark:hover:bg-black-light hover:rounded-md mb-12 pt-4"
   >
     <div class="flex justify-around gap-3 sm:gap-0 px-1 pt-3">
       <div class="w-[10vw] md:w-[5vw]">
@@ -55,7 +55,7 @@
           <p class="text-[#868e96]">LinkedIn</p>
           Boris Brenner ✨ • <span class="text-[#868e96]">16 Sept 2023</span>
         </h3>
-        <p class="font-medium text-secondary text-wrap">
+        <p class="font-medium dark:text-secondary text-wrap">
           just a fan of your videos 👍🏼
         </p>
         <div class="flex justify-end gap-2 p-2 hover:cursor-pointer">
@@ -77,7 +77,7 @@
     </div>
   </div>
   <div
-    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto hover:bg-black-light hover:rounded-md mb-12 pt-4"
+    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto hover:bg-[#F0F3F5] dark:hover:bg-black-light hover:rounded-md mb-12 pt-4"
   >
     <div class="flex justify-around gap-3 sm:gap-0 px-1 pt-3">
       <div class="w-[10vw] md:w-[5vw]">
@@ -92,7 +92,7 @@
           <p class="text-[#868e96]">YouTube</p>
           @tolutronics ✨ • <span class="text-[#868e96]">03 Sept 2023</span>
         </h3>
-        <p class="font-medium text-secondary text-wrap">
+        <p class="font-medium dark:text-secondary text-wrap">
           Well explained... thank you Tola
         </p>
         <div
@@ -117,7 +117,7 @@
     </div>
   </div>
   <div
-    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto hover:bg-black-light hover:rounded-md mb-12 pt-4"
+    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto hover:bg-[#F0F3F5] dark:hover:bg-black-light hover:rounded-md mb-12 pt-4"
   >
     <div class="flex justify-around gap-3 sm:gap-0 px-1 pt-3">
       <div class="w-[10vw] md:w-[5vw]">
@@ -133,7 +133,7 @@
           @theophilusshaibu6750✨ •
           <span class="text-[#868e96]">10 Feb 2023</span>
         </h3>
-        <p class="font-medium text-secondary text-wrap">
+        <p class="font-medium dark:text-secondary text-wrap">
           Helpful stuff. Thanks.
         </p>
         <div
