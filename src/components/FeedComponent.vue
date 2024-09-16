@@ -63,9 +63,9 @@
         </p>
         <div class="mt-3 h-[50vh]">
           <img
-            src="@/assets/icons/tola.jpeg"
+            src="@/assets/icons/person.jpg"
             alt="image"
-            class="h-full w-full object-fill object-to rounded-lg"
+            class="h-full w-full object-cover object-top rounded-lg"
           />
         </div>
         <div class="flex justify-end gap-2 p-2">
@@ -366,9 +366,9 @@
         </p>
         <div class="mt-3 h-[50vh]">
           <img
-            src="@/assets/icons/trip.jpeg"
+            src="@/assets/icons/birth.jpg"
             alt="image"
-            class="h-full w-full object-fill rounded-lg"
+            class="h-full w-full object-cover rounded-lg"
           />
         </div>
         <div class="flex justify-end gap-2 p-2">
