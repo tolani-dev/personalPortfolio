@@ -254,7 +254,7 @@ export default defineComponent({
         isLoading.value = false;
         email.value = "";
         // displayToast();
-        toast("You have succesful subscribe to my news letter", {
+        toast("You have succesfully subscribe to my news letter", {
           autoClose: 3000,
           theme: "auto",
           type: "default",
@@ -278,7 +278,7 @@ export default defineComponent({
         // isLoading.value = false;
         email.value = "";
         // displayToast();
-        toast("You have succesful unsubscribe to my news letter", {
+        toast("You have succesfully unsubscribe to my news letter", {
           autoClose: 3000,
           theme: "auto",
           type: "default",
