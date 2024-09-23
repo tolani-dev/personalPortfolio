@@ -49,7 +49,7 @@
       <p class="mt-2 font-medium text-[#868e96]"><span></span>@jsWithTola ✨</p>
       <p class="font-medium mt-2">
         💻 Frontend Developer | Vue.js, React, Ionic 🎥 Aspiring Tech Content
-        Creator | @jsWithTola. 👩‍💻 Freelance + Formerly @Speedpay & @Butler.
+        Creator | @jsWithTola. 👩‍💻 Freelance + Formally @Butler.
       </p>
       <div class="flex justify-between items-center mt-4 gap-0">
         <p class="flex gap-1 text-[#868e96] font-semibold">
@@ -129,18 +129,31 @@
           <input
             placeholder="Email Address"
             class="block dark:bg-[#011] bg-[#eee] w-[60%] font-medium border-none rounded-l-3xl focus:outline-none focus:outline-primary p-2"
+            v-model="email"
           />
           <button
+            @click="storeEmail"
             class="bg-primary border-none rounded-r-3xl y-2 px-3.5 hover:outline"
           >
-            <span class="font-bold text-white">Subscribe!</span>
+            <div class="flex justify-center">
+              <spinSpinner v-if="isLoading" />
+              <span v-else class="font-bold text-white">Subscribe!</span>
+            </div>
           </button>
         </div>
         <span
-          class="flex justify-center font-normal text-[#868e96] mt-2 text-sm"
+          @click="removeEmail"
+          class="flex justify-center font-normal text-[#868e96] mt-2 text-sm hover:cursor-pointer"
           >No spam. Unsubscribe any time.</span
         >
       </div>
+      <!-- <div
+        v-if="showToast"
+        class="fixed bottom-4 right-4 bg-primary text-white px-6 py-4 rounded-lg shadow-lg flex items-center space-x-4"
+      >
+        <toastComponent @closeToast="closeToast" :status="status" />
+      </div> -->
+
       <div class="mt-4 flex justify-around gap-0 mb-10 hover:">
         <p
           v-for="tab in tabs"
@@ -177,7 +190,13 @@ import AboutComponent from "@/components/AboutComponent.vue";
 import FeedComponent from "@/components/FeedComponent.vue";
 import ProjectComponent from "@/components/ProjectComponent.vue";
 import ReviewComponent from "@/components/ReviewComponent.vue";
-import { defineComponent, onMounted, ref } from "vue";
+import { defineComponent, onMounted, reactive, ref } from "vue";
+import { deleteEmail, saveEmail } from "@/services/supabase.service";
+import toastComponent from "@/components/action/toastComponent.vue";
+import spinSpinner from "@/components/action/Spin.vue";
+import { toast } from "vue3-toastify";
+import "vue3-toastify/dist/index.css";
+// import { displayToast } from "@/components/toastComponent.vue";
 // import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 
 export default defineComponent({
@@ -187,10 +206,15 @@ export default defineComponent({
     AboutComponent,
     ProjectComponent,
     ReviewComponent,
+    // toastComponent,
+    spinSpinner,
   },
   setup(props, ctx) {
+    const isLoading = ref(false);
+    const status = ref(false);
     const tabs = ref(["Feed", "About", "Project", "Reviews"]);
     const active = ref("Feed");
+    const email = ref();
     const isActive = (type: any) => {
       active.value = type;
     };
@@ -204,18 +228,72 @@ export default defineComponent({
       window.open("https://x.com/giwafauzziyyah", "_blank");
     };
     const isDarkMode = ref(false);
+    // A reference to control the visibility of the toast
+    const showToast = ref(false);
 
-    // Function to toggle dark mode
-    // const toggleDarkMode = () => {
-    //   isDarkMode.value = !isDarkMode.value;
-    //   if (isDarkMode.value) {
-    //     document.documentElement.classList.add("dark");
-    //     localStorage.setItem("theme", "dark");
-    //   } else {
-    //     document.documentElement.classList.remove("dark");
-    //     localStorage.setItem("theme", "light");
-    //   }
-    // };
+    // Function to show the toast
+    const displayToast = () => {
+      showToast.value = true;
+
+      // Auto-dismiss the toast after 5 seconds
+      setTimeout(() => {
+        showToast.value = false;
+      }, 5000);
+    };
+
+    // Function to manually close the toast
+    const closeToast = () => {
+      showToast.value = false;
+    };
+    const storeEmail = async () => {
+      localStorage.setItem("email", email.value);
+      isLoading.value = true;
+      const { data, error } = await saveEmail(email.value);
+      if (!error) {
+        // status.value = true;
+        isLoading.value = false;
+        email.value = "";
+        // displayToast();
+        toast("You have succesful subscribe to my news letter", {
+          autoClose: 3000,
+          theme: "auto",
+          type: "default",
+          dangerouslyHTMLString: true,
+        });
+      } else {
+        console.log(error);
+        toast(`Try again an error occured`, {
+          autoClose: 3000,
+          theme: "auto",
+          type: "default",
+          dangerouslyHTMLString: true,
+        });
+      }
+    };
+    const removeEmail = async () => {
+      // isLoading.value = true;
+      const { data, error } = await deleteEmail(localStorage.getItem("email"));
+      if (!error) {
+        // status.value = true;
+        // isLoading.value = false;
+        email.value = "";
+        // displayToast();
+        toast("You have succesful unsubscribe to my news letter", {
+          autoClose: 3000,
+          theme: "auto",
+          type: "default",
+          dangerouslyHTMLString: true,
+        });
+      } else {
+        console.log(error);
+        toast(`Try again an error occured`, {
+          autoClose: 3000,
+          theme: "auto",
+          type: "default",
+          dangerouslyHTMLString: true,
+        });
+      }
+    };
     // Check the user's theme preference on mounted
     onMounted(() => {
       const storedTheme = localStorage.getItem("theme");
@@ -233,6 +311,13 @@ export default defineComponent({
       active,
       openYoutube,
       twitter,
+      storeEmail,
+      email,
+      showToast,
+      closeToast,
+      isLoading,
+      status,
+      removeEmail,
       // toggleDarkMode,
     };
   },

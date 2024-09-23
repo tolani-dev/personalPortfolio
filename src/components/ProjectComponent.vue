@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto mb-24"
+    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto pb-24"
   >
     <swiper
       :effect="'cube'"

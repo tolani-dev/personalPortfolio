@@ -117,7 +117,7 @@
     </div>
   </div>
   <div
-    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto hover:bg-[#F0F3F5] dark:hover:bg-black-light hover:rounded-md mb-12 pt-4"
+    class="w-full p-4 sm:p-0 sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[40vw] m-auto hover:bg-[#F0F3F5] dark:hover:bg-black-light hover:rounded-md pb-12 pt-4"
   >
     <div class="flex justify-around gap-3 sm:gap-0 px-1 pt-3">
       <div class="w-[10vw] md:w-[5vw]">
