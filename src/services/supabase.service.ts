@@ -2,8 +2,8 @@ import { createClient } from "@supabase/supabase-js";
 
 // Create a single supabase client for interacting with your database
 const supabase = createClient(
-  "https://jxfuflkasmfxzksjsiic.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp4ZnVmbGthc21meHprc2pzaWljIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjY1MDYyNjIsImV4cCI6MjA0MjA4MjI2Mn0.YpMS99eO6yL1wEa3dMGAW61M9hYVhpSf8FRIa_jRsew"
+  process.env.VUE_APP_SUPA_URL || "",
+  process.env.VUE_APP_SUPA_KEY || ""
 );
 
 export const saveEmail = async (email_address: any) => {
