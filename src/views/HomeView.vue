@@ -49,7 +49,8 @@
       <p class="mt-2 font-medium text-[#868e96]"><span></span>@jsWithTola ✨</p>
       <p class="font-medium mt-2">
         💻 Frontend Developer | Vue.js, React, Ionic 🎥 Aspiring Tech Content
-        Creator | @jsWithTola. 👩‍💻 Freelance + Formally @Butler.
+        Creator | @jsWithTola. 👩‍💻 Freelance + Formally @Butler + Formerly
+        @speedpay.
       </p>
       <div class="flex justify-between items-center mt-4 gap-0">
         <p class="flex gap-1 text-[#868e96] font-semibold">

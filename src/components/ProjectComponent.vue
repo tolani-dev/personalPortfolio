@@ -171,7 +171,7 @@ img {
 }
 .btn {
   background: transparent;
-  border: 2px solid #ee82c7;
+  border: 2px solid #f42272;
   border-radius: 4px;
   color: #fff;
   cursor: pointer;
@@ -187,7 +187,7 @@ img {
 }
 .swiper-cube .swiper-cube-shadow:before {
   content: "";
-  background: #ee82c7 !important;
+  background: #f42272 !important;
   position: absolute;
   left: 0;
   top: 0;
